@@ -14,6 +14,10 @@ This package is a fork from [kadira:blaze-layout v 2.3.0](https://github.com/kad
     meteor add pwix:blaze-layout
 ```
 
+## Issues & help
+
+In case of support or error, please report your issue request to our [Issues tracker](https://github.com/trychlos/pwix-blaze-layout/issues).
+
 ## Original documentation
 
 The rest of this documentation is originally from **kadira**. See also [the Github original repository](https://github.com/kadirahq/blaze-layout/).
