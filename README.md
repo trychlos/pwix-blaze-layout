@@ -1,3 +1,30 @@
+# pwix:blaze-layout
+
+## Preliminary notes
+
+This package is a fork from [kadira:blaze-layout v 2.3.0](https://github.com/kadirahq/blaze-layout/):
+- because I use it and like it (that's fine ;))
+- unfortunately, it seems no more maintained
+- and the #83 issue prevented me to be able to upgrade my Meteor environments
+- so one fix later this package is born.
+
+## Installation
+
+```
+    meteor add pwix:blaze-layout
+```
+
+## Original documentation
+
+The rest of this documentation is originally from **kadira**. See also [the Github original repository](https://github.com/kadirahq/blaze-layout/).
+
+It may have been fixed for some typos and obsolete sentences.
+
+P. Wieser
+- Last updated on 2023, June 20th
+
+----
+
 # BlazeLayout (kadira:blaze-layout) [![Build Status](https://travis-ci.org/kadirahq/blaze-layout.svg?branch=master)](https://travis-ci.org/kadirahq/blaze-layout)
 
 > This project is earlier known as **meteorhacks:flow-layout**. This is an exact copy of FlowLayout but in a different name.
@@ -13,11 +40,7 @@ This is a layout manager designed for Blaze. This is built to use with FlowRoute
 
 ## Usage
 
-First install BlazeLayout with:
-
-~~~
-meteor add kadira:blaze-layout
-~~~
+First install BlazeLayout.
 
 Then create following few templates
 
