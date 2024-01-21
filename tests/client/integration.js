@@ -1,7 +1,7 @@
 Tinytest.addAsync("Integration - render to the dom", function(test, done) {
   BlazeLayout.reset();
   BlazeLayout.render('layout1', {aa: 200});
-  Tracker.afterFlush(function() {
+  Template.layout1.onRendered(function() {
     test.isTrue(/200/.test($('#__blaze-root').text()));
     Meteor.setTimeout(done, 0);
   });

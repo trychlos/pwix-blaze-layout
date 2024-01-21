@@ -1,6 +1,6 @@
 Package.describe({
     summary: 'Layout Manager for Blaze (works well with FlowRouter)',
-    version: '2.3.1',
+    version: '2.3.2',
     git: 'https://github.com/trychlos/pwix-blaze-layout',
     name: "pwix:blaze-layout"
 });
@@ -22,8 +22,8 @@ Package.onTest( function( api ){
 });
 
 function configure( api ){
-    api.versionsFrom( '1.0' );
-    api.use( 'blaze' );
+    api.versionsFrom( ['1.0', '3.0-beta.0'] );
+    api.use( 'blaze@2.0.3 || 3.0.0-alpha300.17' );
     api.use( 'templating' );
     api.use( 'reactive-dict' );
     api.use( 'underscore' );
