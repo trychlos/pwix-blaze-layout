@@ -2,11 +2,17 @@
 
 ## ChangeLog
 
-### 2.3.2-rc
+### 2.3.3-rc
 
     Release date: 
 
     - 
+
+### 2.3.2
+
+    Release date: 2024- 5-21
+
+    - Add Meteor 3.0-rc compatibility (PR fromManual Timita)
 
 ### 2.3.1
 
