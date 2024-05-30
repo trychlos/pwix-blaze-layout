@@ -22,8 +22,8 @@ Package.onTest( function( api ){
 });
 
 function configure( api ){
-    api.versionsFrom( ['1.0', '3.0-beta.0'] );
-    api.use( 'blaze@2.0.3 || 3.0.0-alpha300.17' );
+    api.versionsFrom( ['1.0', '3.0-rc.0'] );
+    api.use( 'blaze@2.0.3 || 3.0.0-alpha300.0' );
     api.use( 'templating' );
     api.use( 'reactive-dict' );
     api.use( 'underscore' );
