@@ -12,7 +12,7 @@
 
     Release date: 2024- 5-21
 
-    - Add Meteor 3.0-rc compatibility (PR fromManual Timita)
+    - Add Meteor 3.0-rc compatibility (PR from Manual Timita)
 
 ### 2.3.1
 
