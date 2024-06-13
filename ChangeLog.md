@@ -4,9 +4,9 @@
 
 ### 2.3.3-rc
 
-    Release date: 
+    Release date:
 
-    - 
+    - Update README
 
 ### 2.3.2
 
