@@ -2,9 +2,9 @@
 
 ## ChangeLog
 
-### 2.3.3-rc
+### 2.3.3
 
-    Release date:
+    Release date: 2024- 6-13
 
     - Update README
 
@@ -22,4 +22,4 @@
 
 ---
 P. Wieser
-- Last updated on 2023, June 20th
+- Last updated on 2024, Jun. 13th
