@@ -4,4 +4,4 @@
 
 import '../../common/js/index';
 
-import './layout.js';
+import './layout';

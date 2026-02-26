@@ -25,6 +25,7 @@ This Meteor package is installable with the usual command:
 
 ```sh
     meteor add pwix:blaze-layout
+    meteor npm install lodash --save
 ```
 
 ## Usage
@@ -92,7 +93,7 @@ By default, BlazeLayout render layouts into a DOM element with the id `__blaze-r
 Add following code inside on the top of one of your client side JS file:
 
 ```js
-    BlazeLayout.setRoot('body');
+    BlazeLayout.setRoot( 'body' );
 ```
 
 You can set any CSS selector, DOM Node, or jQuery object as the root.
@@ -123,7 +124,20 @@ None at the moment.
 
 ## NPM peer dependencies
 
-None at the moment.
+In accordance with advices from [the Meteor Guide](https://guide.meteor.com/writing-atmosphere-packages.html#peer-npm-dependencies), we do not hardcode NPM dependencies in the `Npm.depends` clause of the `package.js`.
+
+Instead we check npm versions of installed packages at runtime, on server startup, in development environment.
+
+Dependencies as of v 2.4.0:
+
+```js
+    'lodash': '^4.17.0'
+```
+
+Each of these dependencies should be installed at application level:
+```
+    meteor npm install <package> --save
+```
 
 ## Translations
 

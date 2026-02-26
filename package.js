@@ -1,8 +1,8 @@
 Package.describe({
     summary: 'Layout Manager for Blaze (works well with FlowRouter)',
-    version: '2.3.4-rc',
+    version: '2.4.0-rc',
     git: 'https://github.com/trychlos/pwix-blaze-layout',
-    name: "pwix:blaze-layout"
+    name: 'pwix:blaze-layout'
 });
 
 Package.onUse( function( api ){
@@ -11,6 +11,7 @@ Package.onUse( function( api ){
         'BlazeLayout'
     ]);
     api.mainModule( 'src/client/js/index.js', 'client' );
+    api.mainModule( 'src/server/js/index.js', 'server' );
 });
 
 Package.onTest( function( api ){
@@ -28,11 +29,14 @@ function configure( api ){
         api.imply( ...arguments );
     };
     api.versionsFrom( ['1.0', '3.0-rc.0'] );
-    _use( 'blaze@2.0.3 || 3.0.0-alpha300.0' );
-    _use( 'templating' );
-    _use( 'reactive-dict' );
+    _use( 'blaze@2.0.3 || 3.0.0-alpha300.0', 'client' );
+    _use( 'ecmascript' );
     // from https://github.com/meteor/blaze/blob/master/packages/blaze/package.js#L9
-    api.use( 'jquery@1.11.9 || 3.0.0', { weak: true }); // should be a weak dep, by having multiple "DOM backends"
+    api.use( 'jquery@1.11.9 || 3.0.0', 'client', { weak: true }); // should be a weak dep, by having multiple "DOM backends"
+    api.imply( 'jquery@1.11.9 || 3.0.0', 'client' );
+    _use( 'reactive-dict', 'client' );
+    _use( 'templating', 'client' );
+    _use( 'tmeasday:check-npm-versions@1.0.2 || 2.0.0-beta.0', 'server' );
     _use( 'tracker' );
 }
 

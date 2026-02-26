@@ -2,12 +2,14 @@
 
 ## ChangeLog
 
-### 2.3.4-rc
+### 2.4.0-rc
 
     Release date: 
 
     - package.js api.use() is completed with api.imply()
-    - Replace meteor/underscore dependency with npm lodash
+    - Normalize the package entry point to src/client/js/index.js for the client
+    - Replace meteor/underscore dependency with npm lodash, thus bumping minor candidate version number
+    - Check npm dependencies from server-side, thus adding a server entry point
 
 ### 2.3.3
 
