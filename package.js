@@ -31,7 +31,6 @@ function configure( api ){
     _use( 'blaze@2.0.3 || 3.0.0-alpha300.0' );
     _use( 'templating' );
     _use( 'reactive-dict' );
-    _use( 'underscore' );
     // from https://github.com/meteor/blaze/blob/master/packages/blaze/package.js#L9
     api.use( 'jquery@1.11.9 || 3.0.0', { weak: true }); // should be a weak dep, by having multiple "DOM backends"
     _use( 'tracker' );

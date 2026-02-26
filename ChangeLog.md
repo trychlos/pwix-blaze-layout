@@ -7,6 +7,7 @@
     Release date: 
 
     - package.js api.use() is completed with api.imply()
+    - Replace meteor/underscore dependency with npm lodash
 
 ### 2.3.3
 
