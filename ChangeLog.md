@@ -6,7 +6,7 @@
 
     Release date: 
 
-    - 
+    - package.js api.use() is completed with api.imply()
 
 ### 2.3.3
 

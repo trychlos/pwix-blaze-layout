@@ -22,14 +22,18 @@ Package.onTest( function( api ){
 });
 
 function configure( api ){
+    const _use = function(){
+        api.use( ...arguments );
+        api.imply( ...arguments );
+    };
     api.versionsFrom( ['1.0', '3.0-rc.0'] );
-    api.use( 'blaze@2.0.3 || 3.0.0-alpha300.0' );
-    api.use( 'templating' );
-    api.use( 'reactive-dict' );
-    api.use( 'underscore' );
+    _use( 'blaze@2.0.3 || 3.0.0-alpha300.0' );
+    _use( 'templating' );
+    _use( 'reactive-dict' );
+    _use( 'underscore' );
     // from https://github.com/meteor/blaze/blob/master/packages/blaze/package.js#L9
-    api.use( 'jquery@1.11.9 || 3.0.0', { weak: true }); // should be a weak dep, by having multiple "DOM backends"
-    api.use( 'tracker' );
+    _use( 'jquery@1.11.9 || 3.0.0', { weak: true }); // should be a weak dep, by having multiple "DOM backends"
+    _use( 'tracker' );
 
     api.addFiles( 'lib/client/namespace.js', 'client' );
     api.addFiles( 'lib/client/layout.js', 'client' );
