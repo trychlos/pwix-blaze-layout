@@ -10,6 +10,7 @@
     - Normalize the package entry point to src/client/js/index.js for the client
     - Replace meteor/underscore dependency with npm lodash, thus bumping minor candidate version number
     - Check npm dependencies from server-side, thus adding a server entry point
+    - Use pwix:logger universal logger
 
 ### 2.3.3
 

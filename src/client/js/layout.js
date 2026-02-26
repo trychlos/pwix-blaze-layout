@@ -4,11 +4,15 @@
 
 import _ from 'lodash';
 
+import { Logger } from 'meteor/pwix:logger';
+
 var currentLayoutName = null;
 var currentLayout = null;
 var currentRegions = new ReactiveDict();
 var currentData;
 var _isReady = false;
+
+const logger = Logger.get();
 
 BlazeLayout.setRoot = function( root ){
     BlazeLayout._root = root;
@@ -139,7 +143,7 @@ BlazeLayout._render = function _render( layout, regions ){
             var template = BlazeLayout._getTemplate(layout, rootDomNode);
             // 'layout' should be null (to render nothing) or an existing template name
             if( layout !== null && !template ){
-                console.log( 'BlazeLayout warning: unknown template \''+layout+'\'' );
+                logger.warning( 'render() unknown template \''+layout+'\'' );
             }
             return Spacebars.include( template );
         });

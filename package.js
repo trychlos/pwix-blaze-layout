@@ -35,6 +35,7 @@ function configure( api ){
     api.use( 'jquery@1.11.9 || 3.0.0', 'client', { weak: true }); // should be a weak dep, by having multiple "DOM backends"
     api.imply( 'jquery@1.11.9 || 3.0.0', 'client' );
     _use( 'reactive-dict', 'client' );
+    _use( 'pwix:logger@1.0.0-rc' );
     _use( 'templating', 'client' );
     _use( 'tmeasday:check-npm-versions@1.0.2 || 2.0.0-beta.0', 'server' );
     _use( 'tracker' );
