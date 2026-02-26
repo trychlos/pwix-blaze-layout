@@ -10,6 +10,7 @@ Package.onUse( function( api ){
     api.export([
         'BlazeLayout'
     ]);
+    api.mainModule( 'src/client/js/index.js', 'client' );
 });
 
 Package.onTest( function( api ){
@@ -32,9 +33,9 @@ function configure( api ){
     _use( 'reactive-dict' );
     _use( 'underscore' );
     // from https://github.com/meteor/blaze/blob/master/packages/blaze/package.js#L9
-    _use( 'jquery@1.11.9 || 3.0.0', { weak: true }); // should be a weak dep, by having multiple "DOM backends"
+    api.use( 'jquery@1.11.9 || 3.0.0', { weak: true }); // should be a weak dep, by having multiple "DOM backends"
     _use( 'tracker' );
-
-    api.addFiles( 'lib/client/namespace.js', 'client' );
-    api.addFiles( 'lib/client/layout.js', 'client' );
 }
+
+// NPM dependencies are checked in /src/server/js/check_npms.js
+// See also https://guide.meteor.com/writing-atmosphere-packages.html#peer-npm-dependencies
