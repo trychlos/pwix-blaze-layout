@@ -2,9 +2,9 @@
 
 ## ChangeLog
 
-### 2.4.0-rc
+### 2.4.0
 
-    Release date: 
+    Release date: 2026- 4- 2
 
     - package.js api.use() is completed with api.imply()
     - Normalize the package entry point to src/client/js/index.js for the client
@@ -32,4 +32,4 @@
 
 ---
 P. Wieser
-- Last updated on 2024, Jun. 13th
+- Last updated on 2026, Apr. 2nd
